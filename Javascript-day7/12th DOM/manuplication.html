@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html>                                              
+    <p id="myp">good morning user</p>
+    <button id="btn">login</button>
+
+    <div id="mydiv"></div>
+
+    <script>
+        //1. change the content - text content
+
+        const paraTag = document.getElementById("myp")
+
+     //   console.log(paraTag.textContent)
+
+        paraTag.textContent = "welcome back user"
+
+        const btnn = document.getElementById("btn")
+
+        btnn.textContent = "logout"
+        
+        //2. update yhe Tag - innerHTML
+
+        const container = document.getElementById("mydiv")
+
+        //update with single HTML tag
+
+       // container.innerHTML = " <h2> This is now heading</h2>"
+       
+       //multiple HTML Tag update
+
+       container.innerHTML =
+       <h2>hello guys</h2>
+       <button>greet</button>
+       <p>this is paragraph</p>
+       <img src="https://images.pexels.com/photos/39320552/pexels-photo-39320552.jpeg" height="150" width="150">
+
+    </script>
+</body>
+</html>
