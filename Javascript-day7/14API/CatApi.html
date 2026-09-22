@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <img src = "cat"  height="300"  width="300">
+
+ <button id="btn">get cat</button>
+    https://api.thecatapi.com/v1/images/search
+ <script>
+    function getImage(){
+
+        const catimage = document.getElementById("cat")
+
+        fetch('https://s3.us-west-2.amazonaws.com/cdn2.thecatapi.com/images/XWqBv4Dnh.jpg')
+   
+        .then( res =>json())
+
+        .then(data => console.log(data[0].url))
+
+
+        .catch(err => console.log('error getting image', err))
+   
+    }
+
+    getImage()
+
+ </script>
+</body>
+</html>
+
