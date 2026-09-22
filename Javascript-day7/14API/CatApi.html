@@ -8,8 +8,8 @@
 <body>
  <img src = "cat"  height="300"  width="300">
 
- <button id="btn">get cat</button>
-    https://api.thecatapi.com/v1/images/search
+ <button id="btn" onclick="getImage()">get cat</button>
+    
  <script>
     function getImage(){
 
@@ -17,9 +17,9 @@
 
         fetch('https://s3.us-west-2.amazonaws.com/cdn2.thecatapi.com/images/XWqBv4Dnh.jpg')
    
-        .then( res =>json())
+        .then( res =>json() )
 
-        .then(data => console.log(data[0].url))
+        .then(data => catimage.src (data[0].url))
 
 
         .catch(err => console.log('error getting image', err))
