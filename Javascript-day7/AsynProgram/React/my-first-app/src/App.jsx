@@ -1,28 +1,85 @@
-import React from "react";
-import './App.'
+//import React from "react"
+//function app(){
 
-function App(){
+  //  let count = 10
+//
+   // function increaseCount(){
+        //count= count +1
+      //  console.log(count)
+    //}
+   // return(
+       // <div>
+       //     <h2>Like/Cart:{count} </h2>
+     //       <button onClick={increaseCount}>Increase</button>
+   //     </div>
+ //   )
+   // }
+ //   export default app 
 
-return(
-  //HTML
-  //REACT CLOSE ALL THE HTML TAG
-  // <Tag Name-Input /Img /br />
-  <div>
-    <nav>
-      <ul>
-        <li>home</li>
-        <li>support</li>
-      </ul>
-    </nav>
 
-    <h1>This is react session</h1>
-    <p>Good evening</p>
-    <button>Greet</button>
 
-    <input type="text" placeholder="enter your name" />
-  </div>
-)
 
-}
+//UseState() - hook in react
+// it is SPECIAL React variable - it will strore the updated and also it will update the data/value on UI - S
 
-export default App
+//Syntax - const [mainVariableName - show on your screen, setVariableName-Updated Value] = useState(initial value)
+//import React from "react"
+//import{useState} from "react";
+
+//function app(){
+
+    //const[like,setLike] = useSate(17)
+
+    //function IncreaseLike(){
+       //( like+1)
+      // console.log(like)
+
+    //}
+
+
+    
+    //return(
+        //<div>
+          //  <h2>Like/Cart:{like} </h2>
+        //    <button onClick={IncreaseLike}>Increase</button>
+      //  </div>
+    //)
+    //}
+   // export default app 
+
+
+
+    //example 3 -
+    //import React from "react";
+
+    //function app(){
+
+  //      const[show,Setshow] = useState(false)
+
+//        return(
+  //          <div>
+    //            <input type={show? "text": "password"} placeholder="enter password"/>
+      //         <button onClick={()=> Setshow(!show)} >show/hide</button>
+        //     </div>
+       // )
+    //}
+
+    //export default app
+
+
+    //example 4 -
+     import React from "react";
+
+    function app(){
+
+        const[follow,Setfollow] = useState(false)
+
+        return(
+            <div>
+                <button onClick={()=> Setfollow(!follow)}>{follow ? "following" : "follow"}</button>
+               
+             </div>
+        )
+    }
+
+    export default app
