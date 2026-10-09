@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>login</h1>
+
+    <form id="loginform">
+      Name:  <input type="text" name="username" placeholder="Username" required>
+      Email: <input type="email" name="email" placeholder="enter email" id="email" required>
+      Password: <input type="password" name="password" placeholder="enter password" id="password" required>
+      <button type="submit" >submit/login</button>
+    </form>
+
+    <script>
+       document.getElementById("loginform").addEventListener('submit',function(event))
+
+       event.preventDefault()  //avaoid reloading of page/form
+
+       name=document.getElementById("name").value
+       email=document.getElementById("email").value
+
+       //connection - to backend
+         fetch()
+        
+    
+
+    </script>
+</body>
+</html>
