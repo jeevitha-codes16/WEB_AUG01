@@ -22,6 +22,8 @@ app.post('/login', (req, res) => {
 
     if(name&&email){
         res.json({message: `welcome ${name} to my website`})
+    }else{
+        res.json({ message: 'please provide name and email'})
     }
 
 })
